@@ -2,7 +2,6 @@
 An assessment to measure my ability to work with relational databases with SQL queries for solving business problems.
 
 
-## Financial Analytics SQL Repository
 **Overview**
 
 This repository contains a collection of SQL queries designed to provide critical business insights for financial product management, customer segmentation, and revenue optimization. The analytics suite addresses key business scenarios including cross-selling opportunities, transaction pattern analysis, account management, and customer lifetime value estimation.
