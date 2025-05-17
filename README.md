@@ -1,10 +1,12 @@
 # DataAnalytics-Assessment
 An assessment to measure my ability to work with relational databases with SQL queries for solving business problems.
 
+
 ## Financial Analytics SQL Repository
 **Overview**
 
 This repository contains a collection of SQL queries designed to provide critical business insights for financial product management, customer segmentation, and revenue optimization. The analytics suite addresses key business scenarios including cross-selling opportunities, transaction pattern analysis, account management, and customer lifetime value estimation.
+
 
 ### Business Scenarios
 #### 1. High-Value Customers with Multiple Products 
@@ -19,6 +21,7 @@ Calculates total deposits across all account types
 Ranks customers by total deposit value
 
 Enables targeted marketing for existing high-value customers
+
 
 #### 2. Transaction Frequency Analysis 
 Business Need: Segment customers based on transaction frequency to tailor marketing strategies and service offerings.
@@ -38,6 +41,7 @@ Provides count of customers in each segment
 
 Reveals typical transaction frequency within segments
 
+
 #### 3. Account Inactivity Alert
 Business Need: Proactively identify and re-engage customers with dormant accounts before potential churn.
 
@@ -50,6 +54,7 @@ Works across both savings and investment accounts
 Calculates days since last transaction
 
 Enables targeted re-engagement campaigns
+
 
 #### 4. Customer Lifetime Value (CLV) Estimation 
 Business Need: Estimate long-term value of customer relationships to prioritize retention efforts and acquisition spending.
@@ -64,6 +69,7 @@ Estimates CLV based on transaction frequency and average profit
 
 Ranks customers by estimated lifetime value
 
+
 ### Technical Implementation
 Database Schema
 ***The queries utilize the following tables:***
@@ -73,6 +79,7 @@ Database Schema
 **savings_savingsaccount:** Transaction details and account balances
 
 **plans_plan:** Product enrollment and account type information
+
 
 #### Key Metrics Definitions
 
@@ -87,6 +94,7 @@ Database Schema
 **Customer Tenure:** Months between signup date and current date
 
 **Account Inactivity:** No transactions for 365+ days
+
 
 ## Usage Guidance
 #### Prerequisites
@@ -117,6 +125,7 @@ Detect churn risks through inactivity identification
 Segment customers for personalized marketing campaigns
 
 Measure customer lifetime value for acquisition ROI calculations
+
 
 ## Maintenance
 These queries should be reviewed quarterly to ensure:
