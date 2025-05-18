@@ -14,11 +14,8 @@ Business Need: Identify customers who have both savings and investment plans to 
 ***Query Capabilities:***
 
 Identifies customers with funded savings and investment plans
-
 Calculates total deposits across all account types
-
 Ranks customers by total deposit value
-
 Enables targeted marketing for existing high-value customers
 
 
@@ -31,13 +28,9 @@ Calculates average transactions per customer per month
 
 *Segments customers into:*
 High Frequency (≥10 transactions/month)
-
 Medium Frequency (3-9 transactions/month)
-
 Low Frequency (≤2 transactions/month)
-
 Provides count of customers in each segment
-
 Reveals typical transaction frequency within segments
 
 
@@ -47,11 +40,8 @@ Business Need: Proactively identify and re-engage customers with dormant account
 ***Query Capabilities:***
 
 Identifies active accounts with no transaction activity in the past year
-
 Works across both savings and investment accounts
-
 Calculates days since last transaction
-
 Enables targeted re-engagement campaigns
 
 
@@ -61,37 +51,27 @@ Business Need: Estimate long-term value of customer relationships to prioritize 
 ***Query Capabilities:***
 
 Calculates account tenure in months
-
 Counts total transactions per customer
-
 Estimates CLV based on transaction frequency and average profit
-
 Ranks customers by estimated lifetime value
 
 
 ### Technical Implementation
+
 Database Schema
 ***The queries utilize the following tables:***
-
 **users_customuser:** Customer profile information
-
 **savings_savingsaccount:** Transaction details and account balances
-
 **plans_plan:** Product enrollment and account type information
 
 
 #### Key Metrics Definitions
 
 **Savings Plan:** Identified by is_regular_savings = 1
-
 **Investment Plan:** Identified by is_a_fund = 1
-
 **Transaction Amount:** Stored in kobo (divide by 100 for currency value)
-
 **Profit per Transaction:** Calculated as 0.1% of transaction value
-
 **Customer Tenure:** Months between signup date and current date
-
 **Account Inactivity:** No transactions for 365+ days
 
 
@@ -100,22 +80,42 @@ Database Schema
 
 **SQL database access (MySQL/MariaDB)** 
 Appropriate permissions to query the tables
-
 ***Running the Queries***
-
 **Connected to the database using MySQL client**
-
 **Copy the query for my the expected analysis**
-
 **Execute the query against the database**
-
 **Export results as needed (CSV, Excel, etc.)**
 
 
 ## Data Insights
 **The SQL queries in this repository enable stakeholders to:**
 
-Identify highest-value customers for retention prioritization
+## Business Insights
+
+The **Highest-value customer**: 
+
+***Customer Value Segmentation:*** *Chima Ataman represents high-value customers (few accounts but largest deposits), while Opeoluwa Popoola represents high-engagement customers (many accounts but lower total value).*
+***Investment vs. Savings Behavior:*** *There's variation in how customers allocate funds. Obi David and Opeoluwa Popoola heavily favor savings accounts, while Chima Ataman focuses on investments despite having larger deposits.*
+***Revenue Potential:*** *If the business earns fees based on deposits, Chima Ataman and Obi David represent the most profitable customers despite having fewer total accounts than Opeoluwa.*
+
+***Strategic Opportunities***
+
+***Targeted Marketing: Different strategies could be developed for each segment:***
+
+***High-value clients (Chima):*** *Focus on wealth management services*
+***High-account clients (Opeoluwa):*** *Offer account consolidation or premium service tiers*
+***Balanced clients (David dashme):*** *Cross-sell additional services*
+
+
+***Product Development:***
+
+*The ratio of savings to investments might suggest which products need enhancement to attract more deposits.*
+
+***Risk Assessment***
+
+*Concentration risk exists with a few customers controlling large portions of deposits
+Customer retention strategies should prioritize high-deposit customers*
+
 
 Target cross-selling based on existing product relationships
 
