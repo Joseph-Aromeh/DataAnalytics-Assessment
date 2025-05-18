@@ -18,6 +18,7 @@ Calculates total deposits across all account types
 Ranks customers by total deposit value
 
 ## Data Insights
+
 ![image](https://github.com/user-attachments/assets/03c59faa-02b3-4978-84c8-8256cc0b4b1d)
 
 *Chima Ataman has the highest total deposits, ***89031221548.43355*** (₦89B) despite having only 2 savings accounts
@@ -58,11 +59,9 @@ All these users have both savings and investment accounts*
 *Concentration risk exists with a few customers controlling large portions of deposits
 Customer retention strategies should prioritize high-deposit customers*
 
- 
 
 #### 2. Transaction Frequency Analysis 
 Business Need: Segment customers based on transaction frequency to tailor marketing strategies and service offerings.
-
 
 ***Query Breakdown***
 
@@ -75,13 +74,11 @@ Categorizes users into frequency segments*
 
 ## Business Insights
 
-***Customer Activity Distribution:****
+***Customer Activity Distribution:***
 
 ![image](https://github.com/user-attachments/assets/45fb5a07-1073-4e67-93e8-d3c8609caf2f)
 
-
 *This follows a classic Pareto-like distribution pattern*
-
 
 ***Engagement Analysis:***
 
@@ -111,7 +108,9 @@ Then it selects plans that:*
 Have either no transaction date OR haven't had a transaction in 365+ days*
 
 *It orders results by the longest period of inactivity*
-***Data Insights**
+
+***Data Insights***
+
 ![image](https://github.com/user-attachments/assets/5ca296cd-6d5e-4b73-a0f2-e79b7adf48c7)
 
 ***Business Implications:***
@@ -138,9 +137,8 @@ Estimates CLV based on transaction frequency and average profit
 Ranks customers by estimated lifetime value
 
 ***Data Insights***
+
 ![image](https://github.com/user-attachments/assets/2693c057-4d4d-47e7-8a52-e1b33a4055d8)
-
-
 
 ### Technical Implementation
 
