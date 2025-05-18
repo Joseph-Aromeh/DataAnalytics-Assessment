@@ -140,6 +140,9 @@ Ranks customers by estimated lifetime value
 
 ![image](https://github.com/user-attachments/assets/2693c057-4d4d-47e7-8a52-e1b33a4055d8)
 
+*Chima Ataman having the highest estimated CLV of about 32.3 million.*
+
+
 ### Technical Implementation
 
 Database Schema
