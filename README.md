@@ -16,23 +16,81 @@ Business Need: Identify customers who have both savings and investment plans to 
 Identifies customers with funded savings and investment plans
 Calculates total deposits across all account types
 Ranks customers by total deposit value
-Enables targeted marketing for existing high-value customers
 
+## Data Insights
+*Chima Ataman has the highest total deposits (₦89B) despite having only 2 savings accounts
+Opeoluwa Popoola has the most savings accounts (181)
+Obi David has the most investment accounts (45)
+All these users have both savings and investment accounts*
+
+*They're sorted by total deposits in descending order*
+
+*This suggests that Chima Ataman has fewer but higher-value accounts, while Opeoluwa Popoola has many smaller-value accounts.*
+
+
+## Business Insights
+
+**The Highest-value customers**: 
+
+***Customer Value Segmentation:*** *Chima Ataman represents high-value customers (few accounts but largest deposits), while Opeoluwa Popoola represents high-engagement customers (many accounts but lower total value).*
+
+***Investment vs. Savings Behavior:*** *There's variation in how customers allocate funds. Obi David and Opeoluwa Popoola heavily favor savings accounts, while Chima Ataman focuses on investments despite having larger deposits.*
+
+***Revenue Potential:*** *If the business earns fees based on deposits, Chima Ataman and Obi David represent the most profitable customers despite having fewer total accounts than Opeoluwa.*
+
+***Strategic Opportunities***
+
+***Targeted Marketing: Different strategies could be developed for each segment:***
+
+***High-value clients (Chima):*** *Focus on wealth management services*
+***High-account clients (Opeoluwa):*** *Offer account consolidation or premium service tiers*
+***Balanced clients (David dashme):*** *Cross-sell additional services*
+
+
+***Product Development:***
+
+*The ratio of savings to investments might suggest which products need enhancement to attract more deposits.*
+
+***Risk Assessment***
+
+*Concentration risk exists with a few customers controlling large portions of deposits
+Customer retention strategies should prioritize high-deposit customers*
+
+ 
 
 #### 2. Transaction Frequency Analysis 
 Business Need: Segment customers based on transaction frequency to tailor marketing strategies and service offerings.
 
-***Query Capabilities:***
 
-Calculates average transactions per customer per month
+***Query Breakdown***
 
-*Segments customers into:*
-High Frequency (≥10 transactions/month)
-Medium Frequency (3-9 transactions/month)
-Low Frequency (≤2 transactions/month)
-Provides count of customers in each segment
-Reveals typical transaction frequency within segments
+*First creates a CTE (monthly_transactions) that counts transactions per user per month
+Then creates another CTE (user_frequency) that:
+Calculates average monthly transactions for each user
+Categorizes users into frequency segments*
 
+*Then aggregates data by frequency category*
+
+## Business Insights
+
+***Customer Activity Distribution:****
+
+![image](https://github.com/user-attachments/assets/45fb5a07-1073-4e67-93e8-d3c8609caf2f)
+
+
+*This follows a classic Pareto-like distribution pattern*
+
+
+***Engagement Analysis:***
+
+*High-frequency users are extremely active with 44.7 transactions per month which means they make and average of 1.5 transactions daily
+There's a substantial drop-off between tiers 44.7 for the most frequent customers, 4.7 for mid frequent customers, 1.3 for low frequent customers
+
+***Opportunities:***
+
+*Target medium-frequency users for conversion to high-frequency*
+*Investigate why low-frequency users aren't more engaged*
+*Design retention strategies for the valuable high-frequency segment*
 
 #### 3. Account Inactivity Alert
 Business Need: Proactively identify and re-engage customers with dormant accounts before potential churn.
@@ -85,44 +143,6 @@ Appropriate permissions to query the tables
 **Copy the query for my the expected analysis**
 **Execute the query against the database**
 **Export results as needed (CSV, Excel, etc.)**
-
-
-## Data Insights
-/*Chima Ataman has the highest total deposits (₦89B) despite having only 2 savings accounts
-Opeoluwa Popoola has the most savings accounts (181)
-Obi David has the most investment accounts (45)
-All these users have both savings and investment accounts (matching your HAVING clause)*/
-
-They're sorted by total deposits in descending order*/
-
-*This suggests that Chima Ataman has fewer but higher-value accounts, while Opeoluwa Popoola has many smaller-value accounts.*
-
-
-## Business Insights
-
-The **Highest-value customer**: 
-
-***Customer Value Segmentation:*** *Chima Ataman represents high-value customers (few accounts but largest deposits), while Opeoluwa Popoola represents high-engagement customers (many accounts but lower total value).*/
-***Investment vs. Savings Behavior:*** *There's variation in how customers allocate funds. Obi David and Opeoluwa Popoola heavily favor savings accounts, while Chima Ataman focuses on investments despite having larger deposits.*/
-***Revenue Potential:*** *If the business earns fees based on deposits, Chima Ataman and Obi David represent the most profitable customers despite having fewer total accounts than Opeoluwa.*
-
-***Strategic Opportunities***
-
-***Targeted Marketing: Different strategies could be developed for each segment:***
-
-***High-value clients (Chima):*** *Focus on wealth management services*
-***High-account clients (Opeoluwa):*** *Offer account consolidation or premium service tiers*
-***Balanced clients (David dashme):*** *Cross-sell additional services*
-
-
-***Product Development:***
-
-*The ratio of savings to investments might suggest which products need enhancement to attract more deposits.*
-
-***Risk Assessment***
-
-*Concentration risk exists with a few customers controlling large portions of deposits
-Customer retention strategies should prioritize high-deposit customers*
 
 
 Target cross-selling based on existing product relationships
