@@ -88,14 +88,22 @@ Appropriate permissions to query the tables
 
 
 ## Data Insights
-**The SQL queries in this repository enable stakeholders to:**
+/*Chima Ataman has the highest total deposits (₦89B) despite having only 2 savings accounts
+Opeoluwa Popoola has the most savings accounts (181)
+Obi David has the most investment accounts (45)
+All these users have both savings and investment accounts (matching your HAVING clause)*/
+
+They're sorted by total deposits in descending order*/
+
+*This suggests that Chima Ataman has fewer but higher-value accounts, while Opeoluwa Popoola has many smaller-value accounts.*
+
 
 ## Business Insights
 
 The **Highest-value customer**: 
 
-***Customer Value Segmentation:*** *Chima Ataman represents high-value customers (few accounts but largest deposits), while Opeoluwa Popoola represents high-engagement customers (many accounts but lower total value).*
-***Investment vs. Savings Behavior:*** *There's variation in how customers allocate funds. Obi David and Opeoluwa Popoola heavily favor savings accounts, while Chima Ataman focuses on investments despite having larger deposits.*
+***Customer Value Segmentation:*** *Chima Ataman represents high-value customers (few accounts but largest deposits), while Opeoluwa Popoola represents high-engagement customers (many accounts but lower total value).*/
+***Investment vs. Savings Behavior:*** *There's variation in how customers allocate funds. Obi David and Opeoluwa Popoola heavily favor savings accounts, while Chima Ataman focuses on investments despite having larger deposits.*/
 ***Revenue Potential:*** *If the business earns fees based on deposits, Chima Ataman and Obi David represent the most profitable customers despite having fewer total accounts than Opeoluwa.*
 
 ***Strategic Opportunities***
