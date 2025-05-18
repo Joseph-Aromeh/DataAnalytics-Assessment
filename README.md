@@ -18,7 +18,9 @@ Calculates total deposits across all account types
 Ranks customers by total deposit value
 
 ## Data Insights
-*Chima Ataman has the highest total deposits (₦89B) despite having only 2 savings accounts
+![image](https://github.com/user-attachments/assets/03c59faa-02b3-4978-84c8-8256cc0b4b1d)
+
+*Chima Ataman has the highest total deposits, ***89031221548.43355*** (₦89B) despite having only 2 savings accounts
 Opeoluwa Popoola has the most savings accounts (181)
 Obi David has the most investment accounts (45)
 All these users have both savings and investment accounts*
@@ -102,6 +104,28 @@ Works across both savings and investment accounts
 Calculates days since last transaction
 Enables targeted re-engagement campaigns
 
+*First, it identifies the last transaction date for each plan using a CTE
+Then it selects plans that:*
+
+*Have a positive balance (confirmed_amount > deduction_amount)
+Have either no transaction date OR haven't had a transaction in 365+ days*
+
+*It orders results by the longest period of inactivity*
+***Data Insights**
+![image](https://github.com/user-attachments/assets/5ca296cd-6d5e-4b73-a0f2-e79b7adf48c7)
+
+***Business Implications:***
+
+***Dormant Funds:*** *You have savings accounts with positive balances that haven't been touched in over 8 years (3136 days)!*
+***Account Type Pattern:*** *The oldest inactive accounts are all Savings accounts, while more recent inactive accounts are classified as "Other" (not Savings or Investment)*
+***Potential Lost Customers:*** *The top 5 accounts haven't had activity in over 4 years, suggesting these customers may have abandoned their accounts*
+***Risk Assessment:*** *These dormant accounts represent potential financial liabilities and regulatory concerns depending on your jurisdiction's laws about unclaimed funds*
+
+***Revenue Opportunity: A re-engagement campaign targeting these customers could either:***
+
+*Convert dormant funds into active accounts
+Lead to account closure and fee collection
+Free up these funds for more productive use*
 
 #### 4. Customer Lifetime Value (CLV) Estimation 
 Business Need: Estimate long-term value of customer relationships to prioritize retention efforts and acquisition spending.
@@ -112,6 +136,10 @@ Calculates account tenure in months
 Counts total transactions per customer
 Estimates CLV based on transaction frequency and average profit
 Ranks customers by estimated lifetime value
+
+***Data Insights***
+![image](https://github.com/user-attachments/assets/2693c057-4d4d-47e7-8a52-e1b33a4055d8)
+
 
 
 ### Technical Implementation
@@ -131,27 +159,6 @@ Database Schema
 **Profit per Transaction:** Calculated as 0.1% of transaction value
 **Customer Tenure:** Months between signup date and current date
 **Account Inactivity:** No transactions for 365+ days
-
-
-## Usage Guidance
-#### Prerequisites
-
-**SQL database access (MySQL/MariaDB)** 
-Appropriate permissions to query the tables
-***Running the Queries***
-**Connected to the database using MySQL client**
-**Copy the query for my the expected analysis**
-**Execute the query against the database**
-**Export results as needed (CSV, Excel, etc.)**
-
-
-Target cross-selling based on existing product relationships
-
-Detect churn risks through inactivity identification
-
-Segment customers for personalized marketing campaigns
-
-Measure customer lifetime value for acquisition ROI calculations
 
 
 ## Maintenance
