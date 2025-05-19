@@ -3,7 +3,6 @@ HIGH-VALUE DIVERSIFIED CUSTOMER ANALYSIS
  
  * This query identifies customers who have both savings and investment accounts,
  * showing their account distribution and total deposit value.
- 
  * These are strategically important customers with cross-product adoption.
 */
  
