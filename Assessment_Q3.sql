@@ -3,7 +3,6 @@ DORMANT ACCOUNT IDENTIFICATION
  
  * This query identifies accounts with funds that haven't had 
  * transaction activity in 365+ days (dormant accounts).
- 
  * These represent opportunities for re-engagement or recovery.
  */
  
