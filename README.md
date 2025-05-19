@@ -2,13 +2,13 @@
 An assessment to measure my ability on working with relational databases with SQL queries for solving business problems.
 
 
-### Overview
+## Overview
 
 This repository contains a collection of SQL queries designed to provide critical business insights for the **DataAnalytics-Assessment** task. The analytics suite addresses key business scenarios including cross-selling opportunities, transaction pattern analysis, account management, and customer lifetime value estimation.
 
 
-### Business Scenarios
-#### 1. High-Value Customers with Multiple Products 
+## Business Scenarios
+## 1. High-Value Customers with Multiple Products 
 **Business Need:** Identifying customers who have both savings and investment plans to target cross-selling opportunities.
 
 ***Query Breakdown:***
@@ -17,7 +17,7 @@ Identifies customers with funded savings and investment plans
 Calculates total deposits across all account types
 Ranks customers by total deposit value
 
-## Data Insights
+### Data Insights
 
 ![image](https://github.com/user-attachments/assets/03c59faa-02b3-4978-84c8-8256cc0b4b1d)
 
@@ -27,7 +27,7 @@ Ranks customers by total deposit value
 *This suggests that Chima Ataman has fewer but higher-value accounts, while Opeoluwa Popoola has many smaller-value accounts.*
 
 
-## Business Insights
+### Business Insights
 
 **The Highest-value customers**: 
 
@@ -54,7 +54,7 @@ Ranks customers by total deposit value
 Customer retention strategies should prioritize high-deposit customers*
 
 
-#### 2. Transaction Frequency Analysis 
+## 2. Transaction Frequency Analysis 
 
 **Business Need:** Segmenting customers based on transaction frequency to tailor marketing strategies and service offerings.
 
@@ -66,7 +66,7 @@ Then creates another CTE (user_frequency) that:
 - Categorizes users into frequency segments
 - Then aggregates data by frequency category*
 
-## Data Insights
+### Data Insights
 
 ***Customer Activity Distribution:***
 
@@ -74,7 +74,7 @@ Then creates another CTE (user_frequency) that:
 
 *The distribution seems to follow a classic Pareto-like distribution pattern*
 
-***Engagement Analysis:***
+### Engagement Analysis:
 
 *High-frequency users are extremely active with 44.7 transactions per month which means they make and average of 1.5 transactions daily
 There's a substantial drop-off between each tiers 44.7 for the most frequent customers, 4.7 for mid frequent customers, 1.3 for low frequent customers*
@@ -85,7 +85,7 @@ There's a substantial drop-off between each tiers 44.7 for the most frequent cus
 *Dig deeper to understand the factors behind the users with ***low-frequent*** engagement*
 *Design retention strategies for the valuable ***high-frequency*** segment*
 
-#### 3. Account Inactivity Alert
+## 3. Account Inactivity Alert
 Business Need: Proactively identify and re-engage customers with dormant accounts before potential churn.
 
 ***Query Capabilities:***
@@ -101,11 +101,11 @@ and either has no recorded transaction date OR in fact hasn't carried out any tr
 
 *It orders results by the longest period of inactivity*
 
-***Data Insights***
+### Data Insights
 
 ![image](https://github.com/user-attachments/assets/5ca296cd-6d5e-4b73-a0f2-e79b7adf48c7)
 
-***Business Implications:***
+### Business Insights:
 
 ***Dormant Funds:*** *There are savings accounts with positive balances that haven't been touched in over 8 years (3136 days)!*
 ***Account Type Pattern:*** *The oldest inactive accounts are all Savings accounts, while more recent inactive accounts are classified as "Other" (not Savings or Investment)*
@@ -117,7 +117,7 @@ and either has no recorded transaction date OR in fact hasn't carried out any tr
 Lead to account closure and fee collection
 Free up these funds for more productive use*
 
-#### 4. Customer Lifetime Value (CLV) Estimation 
+## 4. Customer Lifetime Value (CLV) Estimation 
 Business Need: Estimate long-term value of customer relationships to prioritize retention efforts and acquisition spending.
 
 ***Query Capabilities:***
@@ -127,7 +127,7 @@ Counts total transactions per customer
 Estimates CLV based on transaction frequency and average profit
 Ranks customers by estimated lifetime value
 
-***Data Insights***
+### Data Insights
 
 ![image](https://github.com/user-attachments/assets/2693c057-4d4d-47e7-8a52-e1b33a4055d8)
 
@@ -142,7 +142,7 @@ Average transaction value (sum/count)
 Revenue percentage (0.1% assumed)*
 
 
-***Business Implications:***
+### Business Insights:
 
 *Chima Ataman represents over 3x the value of the second-highest customer
 The top 5 customers likely represent a significant portion of total revenue
@@ -153,14 +153,14 @@ Like a pyramid, Cowrywise has a few extremely valuable customers at the top*
 
 ### Technical Implementation
 
-Database Schema
+### Database Schema
 ***The queries utilized the following tables:***
 **users_customuser:** Customer profile information
 **savings_savingsaccount:** Transaction details and account balances
 **plans_plan:** Product enrollment and account type information
 
 
-#### Key Metrics Definitions
+### Key Metrics Definitions
 
 **Savings Plan:** Identified by is_regular_savings = 1
 **Investment Plan:** Identified by is_a_fund = 1
