@@ -5,7 +5,6 @@ CUSTOMER LIFETIME VALUE (CLV) ANALYSIS
  *  - Transaction frequency (annualized)
  *  - Average transaction value (with 0.1% revenue assumption)
  *  - Customer tenure
-  
  * Higher CLV indicates more valuable long-term customers.
 */
  
