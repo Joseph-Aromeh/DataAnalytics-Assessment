@@ -20,9 +20,9 @@ SELECT
     -- Calculate total deposits across all accounts
     SUM(s.confirmed_amount) AS total_deposits
 FROM
-    users_customuser uc
-    JOIN plans_plan p ON uc.id = p.owner_id
-    JOIN savings_savingsaccount s ON p.id = s.plan_id
+    users_customuser AS uc
+    JOIN plans_plan AS p ON uc.id = p.owner_id
+    JOIN savings_savingsaccount AS s ON p.id = s.plan_id
 WHERE
     -- Only include accounts with positive balance
     s.confirmed_amount > 0
