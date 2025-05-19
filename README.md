@@ -61,7 +61,8 @@ Customer retention strategies should prioritize high-deposit customers*
 
 
 #### 2. Transaction Frequency Analysis 
-Business Need: Segment customers based on transaction frequency to tailor marketing strategies and service offerings.
+
+**Business Need:** Segment customers based on transaction frequency to tailor marketing strategies and service offerings.
 
 ***Query Breakdown***
 
@@ -83,7 +84,7 @@ Categorizes users into frequency segments*
 ***Engagement Analysis:***
 
 *High-frequency users are extremely active with 44.7 transactions per month which means they make and average of 1.5 transactions daily
-There's a substantial drop-off between tiers 44.7 for the most frequent customers, 4.7 for mid frequent customers, 1.3 for low frequent customers
+There's a substantial drop-off between tiers 44.7 for the most frequent customers, 4.7 for mid frequent customers, 1.3 for low frequent customers*
 
 ***Opportunities:***
 
