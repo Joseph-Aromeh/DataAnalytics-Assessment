@@ -21,7 +21,7 @@ SELECT
     (COUNT(ss.id) / NULLIF(TIMESTAMPDIFF(MONTH, uc.date_joined, CURDATE()), 0)) * 12 * 
     (SUM(ss.confirmed_amount) * 0.001 / COUNT(ss.id)) AS estimated_clv
 FROM
-    users_customuser uc
+    users_customuser AS uc
     JOIN savings_savingsaccount ss ON uc.id = ss.owner_id
 GROUP BY 
     uc.id, uc.first_name, uc.last_name, uc.date_joined
