@@ -5,7 +5,6 @@ CUSTOMER TRANSACTION FREQUENCY SEGMENTATION
  * - High Frequency: 10+ transactions per month
  * - Medium Frequency: 3-9 transactions per month
  * - Low Frequency: <3 transactions per month
- 
  * This helps identify engagement levels and target interventions.
 */
  
